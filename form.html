@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>FORM</title>
+	</head>
+	
+	<body>
+		<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
+		<map name = "favorites">
+			<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
+			<!-- </area>로 닫아줘도됨-->
+			<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
+			<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
+			<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
+		</map>
+		
+		<b2>회원가입</b2>
+		
+		<form>
+		<fieldset>
+			<legend>로그인정보</legend>
+			<TABLE BORDER = 0>
+			<TR>
+				<TD><label for="userid">아이디</label></td>
+				<td><input type="text" id="userid" size = 30 value="아이디를 입력해주세요"></label></TD>
+			</TR>		
+			<TR>
+				<TD><label for="userpw">PW</label></td>
+				<td><input type="password" id="userpw" size = 30 value="비밀번호"></label></TD>
+			</TR>
+			<TR>
+				<TD colspan = 2 align="center">
+				<input type="submit" value="로그인">
+				&nbsp;&nbsp;&nbsp;
+				<input type="submit" value="취소">
+				</td>
+			</TR>
+			
+			
+			<!--hidden연습해보기-->
+			<TR>
+				<TD colspan = 2 >
+				<input type="hidden" value="히든">
+				</td>
+			</TR>
+			
+			
+				
+			</TABLE>
+		</fieldset>
+		</form>
+	
+	
+	</body>
+
+</html>

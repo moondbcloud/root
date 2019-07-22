@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>FORM</title>
+	</head>
+	
+	<body>
+		<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
+		<map name = "favorites">
+			<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
+			<!-- </area>로 닫아줘도됨-->
+			<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
+			<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
+			<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
+		</map>
+	<br>
+		
+		<h2>회원가입</h2>
+		
+		<form>
+		<fieldset>
+			<legend>로그인정보</legend>
+			<ul>
+				<li>
+				<label for="user-id">아이디</label>
+				<input type="text" id="user-id" placeholder="아이디입력" readonly="readonly">
+				</li>
+				<li>
+				<label for="pwd1">비밀번호</label>
+				<input type="password" id="pwd1">
+				</li>
+				<li>
+				<label for="pwd2">비밀번호 확인</label>
+				<input type="password" id="pwd2" required>
+				</li>
+			</ul>
+		</fieldset>
+		
+		<fieldset>
+			<legend>개인 정보</legend>
+			<ul>
+				<li>
+				<label for="user-name">이름</label>
+				<input type="text" id="user-name" autofocus>
+				</li>
+				
+				<li>
+				<label for="mail">메일 주소</label>
+				<input type="email" id="mail" value="mjeong-kyun@hanmail.net">
+				</li>
+				<li>
+				<label for="phone">연락처</label>
+				<input type="tel" id="phone" placeholder="010-9437-8486">
+				</li>
+				<li>
+				<label for="homep">블로그/홈페이지</label>
+				<input type="url" id="homep">
+				</li>
+			</ul>
+		</fieldset>
+		<input type="search"><input type="submit" value="가입하기">
+		<br>
+		<label>주문갯수<input type="number" min=1 max=5 value=1></label>
+		<br>
+		<label>주문갯수2<input type="range" min=1 max=5s></label>
+		
+		
+		<fieldset>
+		<legend>신청 과목</legend>
+		<label>신청할 과목 선택(1과목)</label><br>
+		<input type="radio" name="subject" value="speaking">회화
+		<input type="radio" name="subject" value="grammar">문법
+		<input type="radio" name="subject" value="writing">작문
+		</fieldset>
+		
+		<fieldset>
+		<legend>메일링</legend>
+		<label>메일 수신할 뉴스주제(중복가능)</label><br>
+		<input type="checkbox" name="mailing1" value="news">해외단신
+		<input type="checkbox" name="mailing2" value="dialog">5분회화
+		<input type="checkbox" name="mailing3" value="pops">모닝팝스
+		</fieldset>
+		<input type="color"><br>
+		
+		<label>조회기간 :  </label>	
+		<input type="date" id="start"> ~ <input type="date" id="end"><br>
+
+		<label>조회시간 :  </label>	
+		<input type="time" id="start"> ~ <input type="time" id="end"><br>
+		
+		
+		<input type="image" src = "img/btn1.jpg"><br>
+		
+		<select id="class" multiple>
+		<optgroup label="공과대학">
+		<option value="arch" selected>건축공학과</option>
+		<option value="comp" >컴퓨터공학과</option>
+		<option value="meca" >기계공학과</option>
+		</optgroup>
+		<optgroup label="인문대학">
+		<option value="korn" >국문학과</option>
+		</optgroup>
+		</select>
+		<br>
+		<textarea cols=100 rows=10 id="content">내용을 남겨주세요.</textarea><br>
+		
+		
+		<progress value="30" max="100"></progress><br>
+		<meter value="0.8"></meter>
+		
+		
+		
+		
+		
+		<!--우선 지우기
+			<TR>
+				<TD colspan = 2 align="center">
+				<input type="submit" value="로그인">
+				&nbsp;&nbsp;&nbsp;
+				<input type="submit" value="취소">
+				</td>
+			</TR>
+			-->
+			
+			<!--hidden연습해보기
+			<TR>
+				<TD colspan = 2 >
+				<input type="hidden" value="히든">
+				</td>
+			</TR>
+			-->
+			
+				
+			
+		</form>
+	
+	
+	</body>
+
+</html>
