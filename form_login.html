@@ -4,21 +4,193 @@
 	<head>
 	<meta charset="utf-8">
 	<title>FORM</title>
-	<style type="text/css">
-	body {
-    margin: 0;
-    padding: 0;
-	}
+	<script src="../js/prefixfree.min.js"></script>
+	<style>
+		*{
+                margin:0px;
+				padding: 0px;
+
+            }
+		a:link { color: palevioletred; text-decoration: none; }
+      	a:visited { color: palevioletred; text-decoration: none; }
+      	a:hover { color: palevioletred; text-decoration: underline; }
+      	a:active { color: palevioletred; background-color: green; }
+		body{
+                background-image: url("img/image_main.jpg");
+                background-repeat: no-repeat; /*디폴트값은 repeat임*/
+                background-size: cover;
+                background-position: center center;/*수직위치가 오류로 되지 않음*/
+                background-attachment: fixed; /*스크롤이 디폴트값임*/
+        	}
+		#menu{
+			background: rgba(0,0,0,0);
+			width : 100%;
+			height : 100px;
+			margin : 0px;
+			padding : 0px;
+
+			}
+
+			
+		#menu ul li {
+			display: inline;
+			margin: 30px;
+			text-shadow: 5px 5px 3px gray;
+			font-size: x-large;
+			font-weight: 700;
+			font-family:"굴림", 맑은고딕;
+			color: #2a3237;
+			}
+		
+		#menu_ul{
+			padding: 60px 50px 50px 30px;
+		}
+
+
+		table{
+			width: 80%;
+			margin: 80px;
+			background: rgba(0,0,0,0.1);
+			border: 1px solid #333333;
+			border-collapse: collapse;
+		}
+
+		fieldset{
+			width: 80%;
+			margin: 100px;
+		}
+
+
+
+
 	</style>
 	</head>
+
+	
 	
 	<body>
+
+        <div id = "menu">
+			<ul id = "menu_ul">
+				<li><a href = "index.html" alt="home">HOME</a></li>
+				<li><a href = "moonprofile.html" alt="profile">PROFILE</a></li>
+				<li><a href = "example.html" alt="example" >EXAMPLE</a></li>
+				<li><a href = "form_login.html" alt="form">FORM</a></li>
+			</ul>
+		</div>
+
+		<br><br><br><br>
+
+
+		<form>
+				<fieldset id="login">
+					<legend>로그인</legend>
+					<TABLE BORDER = 0>
+					<TR>
+						<TD><label for="userid">아이디</label></td>
+						<td><input type="text" id="userid" size = 30 placeholder="아이디를 입력하세요"></label></TD>
+					</TR>		
+					<TR>
+						<TD><label for="userpw">비밀번호</label></td>
+						<td><input type="password" id="userpw" size = 30 placeholder="비밀번호를 입력하세요"></label></TD>
+					</TR>
+					<TR>
+						<TD colspan = 2 align="center">
+						<input type="submit" value="로그인">
+						&nbsp;&nbsp;&nbsp;
+						<input type="reset" value="취소">
+						</td>
+					</TR>
+					<TR>
+						<TD colspan = 2 align="center">
+						가입하지 않은 경우 회원가입해주세요!! <a href = "#membership"><input type="button" value="회원가입"><a>
+						</td>
+					</TR>
+					<TR>
+						<TD colspan = 2 align="center">
+						비회원은 방명록을 이용해주세요 <a href = "#vistorbook"><input type="button" value="방명록"><a>
+						</td>
+					</TR>
+					</table>
+				</fieldset>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<fieldset id="membership">
+					<legend>회원가입</legend>
+					<TABLE BORDER = 0>
+					<TR>
+						<TD><label for="userid">회원아이디</label></td>
+						<td><input type="text" id="userid" size = 30 placeholder="아이디를만들어주세요"></label></TD>
+					</TR>		
+					<TR>
+						<TD><label for="userpw">비밀번호</label></td>
+						<td><input type="password" id="userpw" size = 30 min=8 placeholder="비밀번호를 만들어주세요(최소8자이상)"></label></TD>
+						<td><input type="password" id="userpw" size = 30 min=8 placeholder="확인"></label></TD>
+					</TR>
+					<TR>
+						<TD><label for="name">이름</label></td>
+						<td><input type="text" id="name" size = 30 placeholder="이름을 입력해주세요"></label></TD>
+					</TR>		
+					<TR>
+						<TD><label for="birth">생년월일</label></td>
+						<td><input type="date" id="birth"></label></TD>
+					</TR>
+					<TR>
+					<TD colspan = 2 align="center">
+					<a href = "#membership"><input type="button" value="회원가입"><a>
+					</td>
+					</table>
+				</fieldset>	
+				
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+				<fieldset id="vistorbook">
+					<legend>방명록</legend>
+					<TABLE BORDER = 0>
+							<colgroup>
+								<col style = "width : 200px">
+								<col style = "width : 400px">
+							 </colgroup>
+					<TR>
+						<TD><label for="vistorid">이름</label></td>
+						<td><input type="text" id="vistorid" size = 30 placeholder="이름를넣어주세요"></label></TD>
+					</TR>		
+					<TR>
+						<TD><label for="vistormail">이메일</label></td>
+						<td><input type="email" id="vistormail" placeholder="이메일을 입력해주세요"></label></TD>
+						<td>
+						<select id="class">
+						<option value="hanmail" selected>hanmail.net</option>
+						<option value="naver" >naver.com</option>
+						<option value="google" >gmail.com</option>
+						</td>
+					</TR>
+					<TR>
+						<TD><label for="story">내용</label></td>
+						<td><textarea cols=100 rows=10 id="content">내용을 남겨주세요.</textarea><br></TD>
+					</TR>		
+					<TR>
+						<TD colspan = 2 align="center">
+						글남기기&nbsp&nbsp<input type="button" value="저장">
+						</td>
+					</TR>
+					</table>
+				</fieldset>	
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</form>
 	
-		<img src = "img/menu2.jpg" alt="메뉴판" usemap = "#favorites" >
+
+	</body>
+
+	</html>
+
+
+				
+	
+		<!--<img src = "img/menu2.jpg" alt="메뉴판" usemap = "#favorites" >
  
 		<map name = "favorites">
 			<area shape = "rect" coords="40,31,110,79" href = "main.html" alt="home" target = "_blank">
-			<!-- </area>로 닫아줘도됨-->
+			 </area>로 닫아줘도됨
 			<area shape = "rect" coords="140,31,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
 			<area shape = "rect" coords="240,31,320,79" href = "day01.html" alt="example" target = "_blank">
 			<area shape = "rect" coords="340,31,410,79" href = "form_login.html" alt="from" target = "_blank">

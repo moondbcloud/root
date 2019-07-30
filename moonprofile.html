@@ -4,19 +4,108 @@
      <head>
            <meta charset = "utf-8">
            <title> 문정균 프로필 </title>
-     </head>
+           <script src="../js/prefixfree.min.js"></script>
+           <style>
+                  *{
+                      margin:0px;
+                              padding: 0px;
+      
+                  }
+            a:link { color: palevioletred; text-decoration: none; }
+      	a:visited { color: palevioletred; text-decoration: none; }
+      	a:hover { color: palevioletred; text-decoration: underline; }
+      	a:active { color: palevioletred; background-color: rgb(220, 243, 220); }
+                  body{
+                      background-image: url("img/image_main.jpg");
+                      background-repeat: no-repeat; /*디폴트값은 repeat임*/
+                      background-size: cover;
+                      background-position: center center;/*수직위치가 오류로 되지 않음*/
+                      background-attachment: fixed; /*스크롤이 디폴트값임*/
+                    }
+      
+                  #menu{
+                        background: rgba(0,0,0,0);
+                        width : 100%;
+                        height : 100px;
+                        margin : 0px;
+                        padding : 0px;
+      
+                        }
+      
+                        
+                  #menu ul li {
+                        display: inline;
+                        margin: 30px;
+                        text-shadow: 5px 5px 3px gray;
+                        font-size: x-large;
+                        font-weight: 700;
+                        font-family:"굴림", 맑은고딕;
+                        color: #2a3237;
+                        }
+                  
+                  #menu_ul{
+                        padding: 60px 50px 50px 30px;                        
+                  }
+
+
+
+                  h2{
+			color : #2a3237;
+			text-align: center;
+			font-size: x-large;
+		      }
+
+		      p{
+			color : #2a3237;
+			text-align: center;
+			white-space: pre;
+                  }
+                  
+                  table{
+			width: 80%;
+			margin: 80px;
+			background: rgba(0,0,0,0.1);
+			border: 1px solid #333333;
+			border-collapse: collapse;
+		      }
+
+                  #favorite ul li{
+                        color: black !important;
+                        list-style-type: lower-alpha;
+                        margin: 0px 300px 0px 300px;
+                  }
+
+                  </style>
+            </head>
 
      <body>
-           <h2>문정균</h2>
-           <hr><br>
+ 
+            <div id = "menu">
+                        <ul id = "menu_ul">
+                            <li><a href = "index.html" alt="home">HOME</a></li>
+                            <li><a href = "moonprofile.html" alt="profile">PROFILE</a></li>
+                            <li><a href = "example.html" alt="example" >EXAMPLE</a></li>
+                            <li><a href = "form_login.html" alt="form">FORM</a></li>
+                        </ul>
+            </div>
+      
+
+ 
+            <br><br><br>
+
+
            <h2>좋아하는 글귀</h2>
            <br>
-           아름다운 이 세상 소풍 끝내는 날,가서, 아름다웠다고 말하리라
+           <p>아름다운 이 세상 소풍 끝내는 날,가서, 아름다웠다고 말하리라</p>
            <br><br>
+           
            <h2>개인사진</h2>
-           <img src = "img/moon.jpg" width = 150 height = 200> <br>
-           <br><br>
-           <table border ="1">
+    
+
+           <div align = "center"><img src = "img/moon.jpg" width = 150 height = 200></div>
+
+           <br><br><br>
+           <table border =1>
               <colgroup>
                  <col style = "width : 100px">
                  <col style = "width : 300px">
@@ -34,18 +123,22 @@
                  <td>010-9437-8486</td>
             </tr>
             </table>
+            
             <br><br><br>
-           <h2>많이가는 링크</h2>
-  <ul>
-<a href = "https://www.naver.com/" target = "blank"> 
-      <li>네이버</li>
-</a>
-<a href = "https://www.google.co.kr/" target = "blank"> 
-      <li>구글</li>
-</a>
-<a href = "https://www.daum.net/" target = "blank"> 
-      <li>다음</li>
-</a>
+            <h2>많이가는 링크</h2>
+
+            <div id="favorite">
+            <ul>
+            <a href = "https://www.naver.com/" target = "blank"> 
+            <li>네이버</li>
+            </a>
+            <a href = "https://www.google.co.kr/" target = "blank"> 
+            <li>구글</li>
+            </a>
+            <a href = "https://www.daum.net/" target = "blank"> 
+            <li>다음</li>
+            </a>
+            </div>
 
      </body>
 

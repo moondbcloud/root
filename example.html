@@ -4,301 +4,389 @@
 	<head>
 	<meta charset="utf-8">
 	<title>FORM</title>
+	<script src="../js/prefixfree.min.js"></script>
+	<style>
+		*{
+                margin:0px;
+				padding: 0px;
+        }
+		a:link { color: palevioletred; text-decoration: none; }
+      	a:visited { color: palevioletred; text-decoration: none; }
+      	a:hover { color: palevioletred; text-decoration: underline; }
+      	a:active { color: palevioletred; background-color: green; }
+		body{
+                background-image: url("img/image_main.jpg");
+                background-repeat: no-repeat; /*디폴트값은 repeat임*/
+                background-size: cover;
+                background-position: center center;/*수직위치가 오류로 되지 않음*/
+                background-attachment: fixed; /*스크롤이 디폴트값임*/
+        	}
+			#menu{
+			background: rgba(0,0,0,0);
+			width : 100%;
+			height : 100px;
+			margin : 0px;
+			padding : 0px;
+
+			}
+			#menu ul li {
+			display: inline;
+			margin: 30px;
+			text-shadow: 5px 5px 3px gray;
+			font-size: x-large;
+			font-weight: 700;
+			font-family:"굴림", 맑은고딕;
+			color: #2a3237;
+			}
+		
+		#menu_ul{
+			padding: 60px 50px 50px 30px;
+		}
+
+		#box1{
+			float: left;
+			background: rgba(0,0,0,0);
+			width : 150px;
+			height : 1000px;
+			margin : 0px;
+			padding : 0px;
+		}
+
+		#box1 ul li {
+			margin: 50px;
+			text-shadow: 5px 5px 3px gray;
+			font-size: large;
+			font-weight: 700;
+			font-family:"굴림", 맑은고딕;
+			color: #2a3237;			
+		}
+
+		#dayclass{
+			list-style-type: none;
+		}
+		
+		#box2{
+			float: left;
+			position: relative;
+			left: 0px;
+            top: 0px;
+			background: rgba(0,0,0,0);
+			margin : 0px;
+			padding : 0px;		
+			width : 1000px;
+		}
+
+
+
+
+
+
+	</style>
+
 	</head>
+
+
+
 	
 	<body>
-		<img src = "img/menu2.jpg" alt="메뉴판" usemap = "#favorites" >
-		<map name = "favorites">
-			<area shape = "rect" coords="40,31,110,79" href = "main.html" alt="home" target = "_blank">
-			<!-- </area>로 닫아줘도됨-->
-			<area shape = "rect" coords="140,31,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
-			<area shape = "rect" coords="240,31,320,79" href = "example.html" alt="example" target = "_blank">
-			<area shape = "rect" coords="340,31,410,79" href = "form_login.html" alt="from" target = "_blank">
-		</map>
-
-		<img src = "img/menu3.jpg" alt="메뉴판" usemap = "#dayexamples">
-		<map name = "dayexamples">
-			<area shape = "rect" coords="55,10,105,40" href = "#day01" alt="day01" >
-			<area shape = "rect" coords="110,10,170,40" href = "#day02" alt="day02" >
-			<area shape = "rect" coords="175,10,230,40" href = "#day03" alt="day03" >
-			<area shape = "rect" coords="235,10,290,40" href = "#day04" alt="day04" >
-			<area shape = "rect" coords="295,10,350,40" href = "#day05" alt="day05" >
-			<area shape = "rect" coords="355,10,410,40" href = "#day06" alt="day06" >	
-			<area shape = "rect" coords="420,10,475,40" href = "#day07" alt="day07" >
-			<area shape = "rect" coords="480,10,535,40" href = "#day08" alt="day08" >	
-			<area shape = "rect" coords="540,10,595,40" href = "#day09" alt="day09" >
-			<area shape = "rect" coords="600,10,665,40" href = "#day10" alt="day10" >	
-			<area shape = "rect" coords="670,10,735,40" href = "#day11" alt="day11" >
-			<area shape = "rect" coords="740,10,805,40" href = "#day12" alt="day12" >	
-			<area shape = "rect" coords="810,10,875,40" href = "#day13" alt="day13" >
-
-		</map>
-	<br>
-		<fieldset id = day01>
-		<h2>1일차 수업 : html 기본내용(visual studio설치 및 eclipse를 통한 연습), 텍스트관련 태그연습</h2>
-		<hr>
-		<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
-		<map name = "favorites">
-			<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
-	
-			<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
-			<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
-			<area shape = "rect" coords="360,51,410,79" href = "form2.html" alt="from" target = "_blank">
-		</map>
-
-		<h1>나의 홈페이지</h1>
-		<h6>나의 홈페이지</h6>
-
-<hr>
-<br><♬ &nbsp &lt &nbsp 홈페이지에 접속하신 여러분을 환영합니다!!! &nbsp &gt
-
-<br><img src = "img/spring_image.jpg" width = 300 height = 200> 
-
-	           <h1>제주 이색 여행지</h1>
-           <h2>야외 탠트를 닮은 건축물 <mark>"테쉬폰"</mark></h2>
-           <p><q><i><b>아일랜드 출신 임피제 신부</b></i></q>가 <em><strong>1954년</strong></em> 제주에 오면서 목장 숙소로 짓기 시작한 후 사료공장, 성당으로 활용됐습니다.</p>
-           <p>제주에서 점차 다른 지방으로 보급됐지만 현재 제주에만 건축물이 남아 있는데, <br><span style = "color:blue";>국내 근현대 건축사의 한페이지를 보여주는 가치를 지닌다</span>고 전문가들은 평가합니다.</p>
-           <hr>
-           <blockquote>
-성이시돌목장은 제주특별자치도 제주시 한림읍 금악리에 있는 목장이다. 특히 이시돌목장은 제주 지역의 최초의 <ruby>전기업목장(全企業牧場)<rt>제주시 한립읍 금악리</rt></ruby>으로 1961년 11월 말에 세워 양돈 사오후 3:41 2019-07-15업을 실시하였으며, 면양을 사육하였던 것으로 알려져 있다. 이시돌목장의 특색있는 건축양식으로 테쉬폰은 유명하다. (출처 : 향토문화전자대전)
-           </blockquote>
-  <br><br>
-  <hr>
-<a href = "https://www.naver.com/" target = "blank"> 
-<!--타겟은 새창으로 열게 하고 싶은 경우-->
-<figue>
-    <img src = "img/spring_image.jpg" width = 300 height = 200> <br>
-    <fugcaption>
-    봄사진
-    </fugcaption>
-</figue>
-</a>
-  <h2> 1박2일 가족여행 코스 </h2>
-  <ul>
-      <li>1일차</li>
-           <ol type="a" start = 3>
-                  <li>해녀박물관</li>
-                  <li>낚시체험</li>
-           </ol>
-      <li>2일차</li>
-  </ul>
-
-  <dl>
-      <dt>1일차 : 제주시 방면
-                  <dd>해녀박물관</dd>
-                  <dd>낚시체험</dd>
-      </dt>
-  </dl>
-
-<hr>
-
-  <table border ="1">
-     <colgroup>
-         <col style = "width : 100px">
-         <col style = "width : 100px">
-         <col style = "width : 100px">
-         <col style = "width : 100px">
-     </colgroup>
-     <caption>
-     자기소개표
-     </caption>
-     <tr>
-         <th>이름</th>
-         <td></td>
-         <th> 연락처 </th>
-         <td></td>
-     </tr>
-
-     <tr>
-         <th>주소</th>
-         <td colspan = "3"></td>
-     </tr>
-
-     <tr>
-         <th> 자기소개 </th>
-         <td colspan = "3"></td>
-     </tr>
-
-  </table>
-  </fieldset>
-  
-  		<fieldset id=day02>
-		<h2>2일차 강의 : 이미지와 하이퍼링크, 폼관련 태그연습</h2>
-			<hr>
-  		<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
-		<map name = "favorites">
-			<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
-			<!-- </area>로 닫아줘도됨-->
-			<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
-			<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
-			<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
-		</map>
-		
-		<b2>회원가입</b2>
-		
-		<form>
-		<fieldset>
-			<legend>로그인정보</legend>
-			<TABLE BORDER = 0>
-			<TR>
-				<TD><label for="userid">아이디</label></td>
-				<td><input type="text" id="userid" size = 30 value="아이디를 입력해주세요"></label></TD>
-			</TR>		
-			<TR>
-				<TD><label for="userpw">PW</label></td>
-				<td><input type="password" id="userpw" size = 30 value="비밀번호"></label></TD>
-			</TR>
-			<TR>
-				<TD colspan = 2 align="center">
-				<input type="submit" value="로그인">
-				&nbsp;&nbsp;&nbsp;
-				<input type="submit" value="취소">
-				</td>
-			</TR>
-			
-			
-			<!--hidden연습해보기-->
-			<TR>
-				<TD colspan = 2 >
-				<input type="hidden" value="히든">
-				</td>
-			</TR>
-			
-			
-				
-			</TABLE>
-		</fieldset>
-  		<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
-		<map name = "favorites">
-			<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
-			<!-- </area>로 닫아줘도됨-->
-			<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
-			<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
-			<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
-		</map>
-	<br>
-		
-		<h2>회원가입</h2>
-		
-		<form>
-		<fieldset>
-			<legend>로그인정보</legend>
-			<ul>
-				<li>
-				<label for="user-id">아이디</label>
-				<input type="text" id="user-id" placeholder="아이디입력" readonly="readonly">
-				</li>
-				<li>
-				<label for="pwd1">비밀번호</label>
-				<input type="password" id="pwd1">
-				</li>
-				<li>
-				<label for="pwd2">비밀번호 확인</label>
-				<input type="password" id="pwd2" required>
-				</li>
+        <div id = "menu">
+			<ul id = "menu_ul">
+				<li><a href = "index.html" alt="home">HOME</a></li>
+				<li><a href = "moonprofile.html" alt="profile">PROFILE</a></li>
+				<li><a href = "example.html" alt="example" >EXAMPLE</a></li>
+				<li><a href = "form_login.html" alt="form">FORM</a></li>
 			</ul>
-		</fieldset>
-		
-		<fieldset>
-			<legend>개인 정보</legend>
-			<ul>
-				<li>
-				<label for="user-name">이름</label>
-				<input type="text" id="user-name" autofocus>
-				</li>
-				
-				<li>
-				<label for="mail">메일 주소</label>
-				<input type="email" id="mail" value="mjeong-kyun@hanmail.net">
-				</li>
-				<li>
-				<label for="phone">연락처</label>
-				<input type="tel" id="phone" placeholder="010-9437-8486">
-				</li>
-				<li>
-				<label for="homep">블로그/홈페이지</label>
-				<input type="url" id="homep">
-				</li>
-			</ul>
-		</fieldset>
-		<input type="search"><input type="submit" value="가입하기">
-		<br>
-		<label>주문갯수<input type="number" min=1 max=5 value=1></label>
-		<br>
-		<label>주문갯수2<input type="range" min=1 max=5s></label>
-		
-		
-		<fieldset>
-		<legend>신청 과목</legend>
-		<label>신청할 과목 선택(1과목)</label><br>
-		<input type="radio" name="subject" value="speaking">회화
-		<input type="radio" name="subject" value="grammar">문법
-		<input type="radio" name="subject" value="writing">작문
-		</fieldset>
-		
-		<fieldset>
-		<legend>메일링</legend>
-		<label>메일 수신할 뉴스주제(중복가능)</label><br>
-		<input type="checkbox" name="mailing1" value="news">해외단신
-		<input type="checkbox" name="mailing2" value="dialog">5분회화
-		<input type="checkbox" name="mailing3" value="pops">모닝팝스
-		</fieldset>
-		<input type="color"><br>
-		
-		<label>조회기간 :  </label>	
-		<input type="date" id="start"> ~ <input type="date" id="end"><br>
+		</div>
 
-		<label>조회시간 :  </label>	
-		<input type="time" id="start"> ~ <input type="time" id="end"><br>
-		
-		
-		<input type="image" src = "img/btn1.jpg"><br>
-		
-		<select id="class" multiple>
-		<optgroup label="공과대학">
-		<option value="arch" selected>건축공학과</option>
-		<option value="comp" >컴퓨터공학과</option>
-		<option value="meca" >기계공학과</option>
-		</optgroup>
-		<optgroup label="인문대학">
-		<option value="korn" >국문학과</option>
-		</optgroup>
-		</select>
-		<br>
-		<textarea cols=100 rows=10 id="content">내용을 남겨주세요.</textarea><br>
-		
-		
-		<progress value="30" max="100"></progress><br>
-		<meter value="0.8"></meter>
-		
-		
-		
-		
-		
-		<!--우선 지우기
-			<TR>
-				<TD colspan = 2 align="center">
-				<input type="submit" value="로그인">
-				&nbsp;&nbsp;&nbsp;
-				<input type="submit" value="취소">
-				</td>
-			</TR>
-			-->
-			
-			<!--hidden연습해보기
-			<TR>
-				<TD colspan = 2 >
-				<input type="hidden" value="히든">
-				</td>
-			</TR>
-			-->
-			
+		<div id = "box1">
+			<ul id = "dayclass">
+				<li><a href = "#day01">Day01</a></li>
+				<li><a href = "#day02">Day02</a></li>
+				<li><a href = "../../example/font.html">Day03</a></li>
+				<li><a href = "">Day04</a></li>
+				<li><a href = "#day05">Day05</a></li>
+				<li><a href = "#day06">Day06</a></li>
+				<li><a href = "#day07">Day07</a></li>
+				<li><a href = "#day08">Day08</a></li>
+				<li><a href = "#day09">Day09</a></li>
+				<li><a href = "#day10">Day10</a></li>
+				<li><a href = "#day11">Day11</a></li>
+				<li><a href = "#day12">Day12</a></li>
+				<li><a href = "#day13">Day13</a></li>
+			</ul>
+
+		</div>
+
+		<div id = "box2">
+
+				<fieldset id = day01>
+						<h2>1일차 수업 : html 기본내용(visual studio설치 및 eclipse를 통한 연습), 텍스트관련 태그연습</h2>
+
+						<img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
+						<map name = "favorites">
+							<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
+					
+							<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
+							<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
+							<area shape = "rect" coords="360,51,410,79" href = "form2.html" alt="from" target = "_blank">
+						</map>
 				
-			
-		</form>
-	
-	
-   		</fieldset> 
+						<h1>나의 홈페이지</h1>
+						<h6>나의 홈페이지</h6>
+				
+
+				<br><♬ &nbsp &lt &nbsp 홈페이지에 접속하신 여러분을 환영합니다!!! &nbsp &gt
+				
+				<br><img src = "img/spring_image.jpg" width = 300 height = 200> 
+				
+							   <h1>제주 이색 여행지</h1>
+						   <h2>야외 탠트를 닮은 건축물 <mark>"테쉬폰"</mark></h2>
+						   <p><q><i><b>아일랜드 출신 임피제 신부</b></i></q>가 <em><strong>1954년</strong></em> 제주에 오면서 목장 숙소로 짓기 시작한 후 사료공장, 성당으로 활용됐습니다.</p>
+						   <p>제주에서 점차 다른 지방으로 보급됐지만 현재 제주에만 건축물이 남아 있는데, <br><span style = "color:blue";>국내 근현대 건축사의 한페이지를 보여주는 가치를 지닌다</span>고 전문가들은 평가합니다.</p>
+						   <hr>
+						   <blockquote>
+				성이시돌목장은 제주특별자치도 제주시 한림읍 금악리에 있는 목장이다. 특히 이시돌목장은 제주 지역의 최초의 <ruby>전기업목장(全企業牧場)<rt>제주시 한립읍 금악리</rt></ruby>으로 1961년 11월 말에 세워 양돈 사오후 3:41 2019-07-15업을 실시하였으며, 면양을 사육하였던 것으로 알려져 있다. 이시돌목장의 특색있는 건축양식으로 테쉬폰은 유명하다. (출처 : 향토문화전자대전)
+						   </blockquote>
+				  <br><br>
+				  <hr>
+				<a href = "https://www.naver.com/" target = "blank"> 
+				<!--타겟은 새창으로 열게 하고 싶은 경우-->
+				<figue>
+					<img src = "img/spring_image.jpg" width = 300 height = 200> <br>
+					<fugcaption>
+					봄사진
+					</fugcaption>
+				</figue>
+				</a>
+				  <h2> 1박2일 가족여행 코스 </h2>
+				  <ul>
+					  <li>1일차</li>
+						   <ol type="a" start = 3>
+								  <li>해녀박물관</li>
+								  <li>낚시체험</li>
+						   </ol>
+					  <li>2일차</li>
+				  </ul>
+				
+				  <dl>
+					  <dt>1일차 : 제주시 방면
+								  <dd>해녀박물관</dd>
+								  <dd>낚시체험</dd>
+					  </dt>
+				  </dl>
+				
+
+				
+				  <table border ="1">
+					 <colgroup>
+						 <col style = "width : 100px">
+						 <col style = "width : 100px">
+						 <col style = "width : 100px">
+						 <col style = "width : 100px">
+					 </colgroup>
+					 <caption>
+					 자기소개표
+					 </caption>
+					 <tr>
+						 <th>이름</th>
+						 <td></td>
+						 <th> 연락처 </th>
+						 <td></td>
+					 </tr>
+				
+					 <tr>
+						 <th>주소</th>
+						 <td colspan = "3"></td>
+					 </tr>
+				
+					 <tr>
+						 <th> 자기소개 </th>
+						 <td colspan = "3"></td>
+					 </tr>
+				
+				  </table>
+				  </fieldset>
+				  
+						  <fieldset id=day02>
+						<h2>2일차 강의 : 이미지와 하이퍼링크, 폼관련 태그연습</h2>
+							<hr>
+						  <img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
+						<map name = "favorites">
+							<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
+							<!-- </area>로 닫아줘도됨-->
+							<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
+							<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
+							<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
+						</map>
+						
+						<b2>회원가입</b2>
+						
+						<form>
+						<fieldset>
+							<legend>로그인정보</legend>
+							<TABLE BORDER = 0>
+							<TR>
+								<TD><label for="userid">아이디</label></td>
+								<td><input type="text" id="userid" size = 30 value="아이디를 입력해주세요"></label></TD>
+							</TR>		
+							<TR>
+								<TD><label for="userpw">PW</label></td>
+								<td><input type="password" id="userpw" size = 30 value="비밀번호"></label></TD>
+							</TR>
+							<TR>
+								<TD colspan = 2 align="center">
+								<input type="submit" value="로그인">
+								&nbsp;&nbsp;&nbsp;
+								<input type="submit" value="취소">
+								</td>
+							</TR>
+							
+							
+							<!--hidden연습해보기-->
+							<TR>
+								<TD colspan = 2 >
+								<input type="hidden" value="히든">
+								</td>
+							</TR>
+							
+							
+								
+							</TABLE>
+						</fieldset>
+						  <img src = "img/menu.jpg" alt="메뉴판" usemap = "#favorites">
+						<map name = "favorites">
+							<area shape = "rect" coords="60,51,110,79" href = "index.html" alt="home" target = "_blank">
+							<!-- </area>로 닫아줘도됨-->
+							<area shape = "rect" coords="160,51,210,79" href = "moonprofile.html" alt="profile" target = "_blank">
+							<area shape = "rect" coords="260,51,310,79" href = "text.html" alt="example" target = "_blank">
+							<area shape = "rect" coords="360,51,410,79" href = "form.html" alt="form" target = "_blank">
+						</map>
+					<br>
+						
+						<h2>회원가입</h2>
+						
+						<form>
+						<fieldset>
+							<legend>로그인정보</legend>
+							<ul>
+								<li>
+								<label for="user-id">아이디</label>
+								<input type="text" id="user-id" placeholder="아이디입력" readonly="readonly">
+								</li>
+								<li>
+								<label for="pwd1">비밀번호</label>
+								<input type="password" id="pwd1">
+								</li>
+								<li>
+								<label for="pwd2">비밀번호 확인</label>
+								<input type="password" id="pwd2" required>
+								</li>
+							</ul>
+						</fieldset>
+						
+						<fieldset>
+							<legend>개인 정보</legend>
+							<ul>
+								<li>
+								<label for="user-name">이름</label>
+								<input type="text" id="user-name" autofocus>
+								</li>
+								
+								<li>
+								<label for="mail">메일 주소</label>
+								<input type="email" id="mail" value="mjeong-kyun@hanmail.net">
+								</li>
+								<li>
+								<label for="phone">연락처</label>
+								<input type="tel" id="phone" placeholder="010-9437-8486">
+								</li>
+								<li>
+								<label for="homep">블로그/홈페이지</label>
+								<input type="url" id="homep">
+								</li>
+							</ul>
+						</fieldset>
+						<input type="search"><input type="submit" value="가입하기">
+						<br>
+						<label>주문갯수<input type="number" min=1 max=5 value=1></label>
+						<br>
+						<label>주문갯수2<input type="range" min=1 max=5s></label>
+						
+						
+						<fieldset>
+						<legend>신청 과목</legend>
+						<label>신청할 과목 선택(1과목)</label><br>
+						<input type="radio" name="subject" value="speaking">회화
+						<input type="radio" name="subject" value="grammar">문법
+						<input type="radio" name="subject" value="writing">작문
+						</fieldset>
+						
+						<fieldset>
+						<legend>메일링</legend>
+						<label>메일 수신할 뉴스주제(중복가능)</label><br>
+						<input type="checkbox" name="mailing1" value="news">해외단신
+						<input type="checkbox" name="mailing2" value="dialog">5분회화
+						<input type="checkbox" name="mailing3" value="pops">모닝팝스
+						</fieldset>
+						<input type="color"><br>
+						
+						<label>조회기간 :  </label>	
+						<input type="date" id="start"> ~ <input type="date" id="end"><br>
+				
+						<label>조회시간 :  </label>	
+						<input type="time" id="start"> ~ <input type="time" id="end"><br>
+						
+						
+						<input type="image" src = "img/btn1.jpg"><br>
+						
+						<select id="class" multiple>
+						<optgroup label="공과대학">
+						<option value="arch" selected>건축공학과</option>
+						<option value="comp" >컴퓨터공학과</option>
+						<option value="meca" >기계공학과</option>
+						</optgroup>
+						<optgroup label="인문대학">
+						<option value="korn" >국문학과</option>
+						</optgroup>
+						</select>
+						<br>
+						<textarea cols=100 rows=10 id="content">내용을 남겨주세요.</textarea><br>
+						
+						
+						<progress value="30" max="100"></progress><br>
+						<meter value="0.8"></meter>
+						
+						
+						
+						
+						
+						<!--우선 지우기
+							<TR>
+								<TD colspan = 2 align="center">
+								<input type="submit" value="로그인">
+								&nbsp;&nbsp;&nbsp;
+								<input type="submit" value="취소">
+								</td>
+							</TR>
+							-->
+							
+							<!--hidden연습해보기
+							<TR>
+								<TD colspan = 2 >
+								<input type="hidden" value="히든">
+								</td>
+							</TR>
+							-->
+							
+								
+							
+						</form>
+					
+					
+			</fieldset>
+
+		</div>
+
 	</body>
 
 </html>
